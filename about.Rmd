@@ -9,11 +9,20 @@ output:
 ## Academic Experience
 
 #### University of California, Los Angeles 
-* BS in Biology from UCLA. 
+* BS in Biology
+* Minor: Global Health 
 
 #### Columbia University 
 * MPH in Epidemiology
 * Certificate: Global Health
+
+
+## Professional Experience 
+
+#### Genomics – Biomedical Research and Genetic Diagnostics, Tbilisi, Georgia – Assistant Laboratory Manager, Lab Worker 
+* October 2020 – July 2021
+* Conducted PCR testing for COVID-19, managed supply, communicated with suppliers, managed schedules and relations between diagnostics team and administration, managed and organized large data in Microsoft Excel.
+
 
 ## Internships and Volunteer Experience: 
 

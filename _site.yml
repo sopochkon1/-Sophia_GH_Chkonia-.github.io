@@ -4,11 +4,15 @@ navbar:
   title: "Home"
   right:
     - text: "Experience"
-      href: resume.html
+      href: about.html
+    - text: "Dashboard"
+      href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<sophiachkonia@gmail.com>
     - icon: fa-github fa-lg
-      href: http://github.com/<p8105_hw4_SC4934>/
+      href: http://github.com/sopochkon1/
+    - icon: fa-brands fa-linkedin
+      href: https://www.linkedin.com/in/sophia-chkonia-695816223/
 output:
   html_document:
     theme: cosmo

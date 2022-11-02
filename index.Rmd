@@ -7,8 +7,8 @@ output:
     theme: cosmo
 ---
 
+ <img src="images/Me.jpg" style="width:45%">
 
- ~![](images/ME.jpg)
 
 
 Hello! I am a graduate student located in New York City. I graduated from UCLA with a
@@ -16,4 +16,7 @@ BS in Biology in 2020. I currently study Epidemiology and Global Health, and hav
 an interest in data science and field epidemiology.
 
 Learn more about me on this website!
+[Experience](about.html)
 
+Or Check out my dashboard: 
+[Dashboard](dashboard.html)
