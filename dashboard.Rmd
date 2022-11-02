@@ -16,19 +16,47 @@ library(plotly)
 Column {data-width=650}
 -----------------------------------------------------------------------
 ```{r}
-data("instacart") 
 data("ny_noaa")
 
-instacart = 
-instacart %>% 
-  group_by(product_name) %>% 
-  summarize(orders = n()) %>% 
-  arrange(desc(orders)) %>% 
-  filter(orders>5000) %>% 
-  mutate(product_name = fct_reorder(product_name, orders))
-
-
 ny_noaa = 
+  ny_noaa %>% 
+  as_tibble(ny_noaa) %>% 
+  separate(date, into = c("year", "month", "day"), sep = "-", convert = TRUE)
+
+
+```
+
+### Chart A: 
+
+```{r}
+
+ ny_noaa %>% 
+  arrange(desc(snow)) %>% 
+  filter(snow > 1104) %>% 
+  select(year, snow) %>% 
+   mutate(
+     year = as.factor(year),
+     year = fct_reorder(year, snow)
+   ) %>% 
+   plot_ly(
+     x = ~ year, y = ~snow,
+     type = "bar",
+     colors = "viridis"
+   ) %>% 
+   layout(
+     title = "Top 5 years with Heaviest Snowfall (mm)",
+     xaxis = list(title = "Year"),
+     yaxis = list(title = "Snowfall (mm)")
+   )
+
+
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+```{r}
+ny_noaa_2 = 
   ny_noaa %>% 
   as_tibble(ny_noaa) %>% 
     janitor::clean_names() %>% 
@@ -41,33 +69,15 @@ ny_noaa =
   ) %>% mutate(
     text_label = str_c("ID: ", id)
   ) %>% 
-  sample_n(1000)
-  
-
+  sample_n(1000) %>% 
+  drop_na(prcp)
 ```
-
-### Chart A: Top 10 Most Ordered Products
-
-```{r}
-
-instacart %>% 
-   plot_ly(
-    x = ~ product_name, y = ~ orders,
-    type = "bar",
-    colors = "viridis"
-  )
-
-
-```
-
-Column {data-width=350}
------------------------------------------------------------------------
 
 ### Chart B
 
 ```{r}
 
-ny_noaa %>% 
+ny_noaa_2 %>% 
   plot_ly(
     x = ~ tmin, y = ~ tmax,
     type = "scatter", mode = "markers",
@@ -76,7 +86,12 @@ ny_noaa %>%
     text = ~ text_label,
     color = ~id,
     showlegend = FALSE
-  ) 
+  ) %>% 
+  layout(
+    title = "Tmax vs Tmin",
+    xaxis = list(title = "Tmin"),
+    yaxis = list(title = "Tmax")
+  )
 
 
 ```
@@ -84,6 +99,24 @@ ny_noaa %>%
 ### Chart C
 
 ```{r}
+
+ny_noaa_2 %>% 
+  mutate(
+    prcp = as.integer(prcp),
+    prcp = prcp/10,
+    year = as.factor(year)
+  ) %>% 
+  plot_ly(
+    y = ~prcp,
+    color = ~year,
+    type = "box",
+    colors = "viridis"
+  ) %>% 
+  layout(
+    title = "Precipitation Per Year",
+    xaxis = list(title = "Year"),
+    yaxis = list(title = "Precipitation")
+  )
 
 ```
 
