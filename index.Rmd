@@ -7,14 +7,13 @@ output:
     theme: cosmo
 ---
 
-MPH Student at Columbia University Mailman School of Public Health. 
-BS in Biology from UCLA. 
+
+ ~![](images/ME.jpg)
 
 
-# About Me
-
-I am a graduate student located in New York City. I graduated from UCLA with a
+Hello! I am a graduate student located in New York City. I graduated from UCLA with a
 BS in Biology in 2020. I currently study Epidemiology and Global Health, and have
-an interest in data science and field epidemiology. 
+an interest in data science and field epidemiology.
 
+Learn more about me on this website!
 

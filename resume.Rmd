@@ -1,19 +1,27 @@
 ---
-title: "Skills and Experience"
+title: "About Me"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
+## Academic Experience
 
-Internships and Volunteer Experience: 
+#### University of California, Los Angeles 
+* BS in Biology from UCLA. 
 
-ICAP at Columbia University, Kigali, Rwanda & New York – Next Generation Intern
-May 2022 – ongoing
-Supported the TRACE project evaluation study aimed to assess the impact of HIV recency testing on yield of HIV testing among contacts of newly diagnosed HIV+ cases in Rwanda. Responsibilities included data quality monitoring, data cleaning and analysis in SAS and R, data abstraction, on-site monitoring of study follow-up and adherence to study procedure, and report writing. Gained experience working with DHIS2.
+#### Columbia University 
+* MPH in Epidemiology
+* Certificate: Global Health
+
+## Internships and Volunteer Experience: 
+
+#### ICAP at Columbia University, Kigali, Rwanda & New York – Next Generation Intern
+* May 2022 - Ongoing
+* Supported the TRACE project evaluation study aimed to assess the impact of HIV recency testing on yield of HIV testing among contacts of newly diagnosed HIV+ cases in Rwanda.
 
 
-Skills
-❖ Software: SAS, R, QGIS, MS Office
-❖ Fluent in written and spoken Georgian and English. Working proficiency in Russian. B1 French
+## Skills
+* Software: SAS, R, QGIS, MS Office
+* Fluent in written and spoken Georgian and English. Working proficiency in Russian. B1 French
